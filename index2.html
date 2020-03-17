@@ -24,6 +24,7 @@
                 background-color: grey;
                 flex:1;
                 padding:10px;
+                position:relative;
             }
             .side-menu:hover {
                 background-color: gold;
@@ -36,6 +37,18 @@
             }
             .dummy {
                 flex:1;
+            }
+            .sub-menu {
+                background-color: brown;
+                display: none;
+                position: absolute;
+                z-index: 10;
+                top:0;
+                left:108px;
+            }
+            .side-menu:hover .sub-menu {
+                display:block;
+                
             }
         </style>
     </head>
@@ -51,17 +64,78 @@
         </div>
         <div class="container2">
             <div class="side-bar">
-                <div class="side-menu">Lorem.</div>
-                <div class="side-menu">Laudantium.</div>
-                <div class="side-menu">Nam?</div>
-                <div class="side-menu">Cupiditate!</div>
-                <div class="side-menu">Ullam!</div>
-                <div class="side-menu">Veniam?</div>
-                <div class="side-menu">Quae?</div>
-                <div class="side-menu">Excepturi.</div>
-                <div class="side-menu">Saepe.</div>
-                <div class="side-menu">Fugiat.</div>
+                <div class="side-menu">Lorem.
+                    <div class="sub-menu">
+                        <div>Lorem.</div>
+                        <div>Reprehenderit.</div>
+                        <div>Eaque.</div>
+                    </div>
+                </div>
+                <div class="side-menu">Laudantium.
+                    <div class="sub-menu">
+                        <div>Lorem.</div>
+                        <div>Reprehenderit.</div>
+                        <div>Eaque.</div>
+                    </div>
+                </div>
+                <div class="side-menu">Nam?
+                    <div class="sub-menu">
+                        <div>Lorem.</div>
+                        <div>Reprehenderit.</div>
+                        <div>Eaque.</div>
+                    </div>
+                </div>
+                <div class="side-menu">Cupiditate!
+                    <div class="sub-menu">
+                        <div>Lorem.</div>
+                        <div>Reprehenderit.</div>
+                        <div>Eaque.</div>
+                    </div>
+                </div>
+                <div class="side-menu">Ullam!
+                    <div class="sub-menu">
+                        <div>Lorem.</div>
+                        <div>Reprehenderit.</div>
+                        <div>Eaque.</div>
+                    </div>
+                </div>
+                <div class="side-menu">Veniam?
+                    <div class="sub-menu">
+                        <div>Lorem.</div>
+                        <div>Reprehenderit.</div>
+                        <div>Eaque.</div>
+                    </div>
+                </div>
+                <div class="side-menu">Quae?
+                    <div class="sub-menu">
+                        <div>Lorem.</div>
+                        <div>Reprehenderit.</div>
+                        <div>Eaque.</div>
+                    </div>
+                </div>
+                <div class="side-menu">Excepturi.
+                    <div class="sub-menu">
+                        <div>Lorem.</div>
+                        <div>Reprehenderit.</div>
+                        <div>Eaque.</div>
+                    </div>
+                </div>
+                <div class="side-menu">Saepe.
+                    <div class="sub-menu">
+                        <div>Lorem.</div>
+                        <div>Reprehenderit.</div>
+                        <div>Eaque.</div>
+                    </div>
+                </div>
+                <div class="side-menu">Fugiat.
+                    <div class="sub-menu">
+                        <div>Lorem.</div>
+                        <div>Reprehenderit.</div>
+                        <div>Eaque.</div>
+                    </div>
+                </div>
             </div>
+            
             <div class="main-contents">
                 <div class="name">Lorem.</div>
                     <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, impedit!</div>
